@@ -10,18 +10,24 @@
     <div class="outer">
         <div class="card">
             <div class="front">
+                <img id="chip" src="chip.png" alt="chip">
+                <div id="brands">
+                    <img style="height: 40px; width: auto;" src="amex.png">
+                    <img style="height: 27px; width: auto; top: 10px;" src="discover.png">
+                    <img style="height: 65px; width: auto;" src="mastercard.png">
+                    <img src="troy.png">
+                    <img src="visa.png">
+                </div>
                 <div id="code"></div>
         
-                <div>
-                    <div id="holder">
-                        <div class="pos">Card Holder</div>
-                        <div class="pos-name" id="holderval"></div>
-                    </div>
-        
-                    <div id="expiry">
-                        <div class="pos">Expires</div>
-                        <div class="pos-name" id="dateval"></div>
-                    </div>
+                <div id="holder">
+                    <div class="pos">Card Holder</div>
+                    <div class="pos-name" id="holderval"></div>
+                </div>
+    
+                <div id="expiry">
+                    <div class="pos">Expires</div>
+                    <div class="pos-name" id="dateval"></div>
                 </div>
             </div>
         
@@ -29,7 +35,7 @@
                 <div id="white-strip"></div>
 
                 <div id="cwback">
-                    <div class="pos" style="position: absolute; right: 3px; bottom: 25px; font-size: 20px;">CW</div>
+                    <div class="pos" style="position: absolute; right: 3px; bottom: 25px; font-size: 20px;">CVV</div>
                     <div class="pos-name" id="cwval"></div>
                 </div>
             </div>
@@ -74,7 +80,7 @@
                 </div>
                 
                 <div id="cw-block">
-                    <label for="cw">CW</label><br>
+                    <label for="cw">CVV</label><br>
                     <input type="text" id="cw" name="cw" value="" autocomplete="off"><br>
                 </div>
             </div>

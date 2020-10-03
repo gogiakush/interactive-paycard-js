@@ -112,6 +112,7 @@ input[type=text] {
 
 #cw {
     width: 120px;
+    height: 45px;
 }
 
 select {
@@ -119,7 +120,8 @@ select {
     width: 130px;
     padding: 12px;
     border-radius: 5px;
-    border: 2px solid rgb(172, 164, 164)
+    border: 2px solid rgb(172, 164, 164);
+    font-size: 20px;
 }
 
 form .horiz {
@@ -173,6 +175,13 @@ input[type=submit] {
     font-family: monospace;
 }
 
+#chip {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 65px;
+}
+
 /*
 font-size: 25px;
     font-weight: 300;
@@ -194,7 +203,7 @@ font-size: 25px;
 
 .pos {
     font-family: monospace;
-    font-size: 14px;
+    font-size: 18px;
     color: rgb(153, 149, 149);
 }
 
@@ -237,6 +246,26 @@ font-size: 25px;
     animation-fill-mode: forwards;
 }
 
+#code, #holderval, #dateval {
+    width: fit-content;
+    height: fit-content;
+}
+
+#brands {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 25px;
+    right: -75px;
+}
+
+#brands img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+}
+
 @keyframes digit {
     from {
         opacity: 0;
@@ -257,23 +286,38 @@ font-size: 25px;
 @keyframes addlet {
     from {
         opacity: 0;
-        transform: translateX(20px);
+        transform: translateX(20px) rotate(90deg);
+        
     }
 
     to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0px) rotate(0deg);
     }
 }
 
 @keyframes dellet {
     from {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0px) rotate(0deg);
     }
 
     to {
         opacity: 0;
-        transform: translateX(20px);
+        transform: translateX(20px) rotate(90deg);
+    }
+}
+
+@keyframes movebrand {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0px);
     }
 }
