@@ -235,7 +235,7 @@ function moveBrands() {
       brands[i].preventDefault;
       brands[i].style.animation = ``;
       void brands[i].offsetWidth;
-      brands[i].style.animation = `movebrand 3s ease-out ${3.2 * i}s 1`;
+      brands[i].style.animation = `movebrand 3s ease-in-out ${3.2 * i}s 1`;
     });
   }
 }
