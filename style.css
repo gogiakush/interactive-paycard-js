@@ -6,11 +6,22 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-width: 100vw;
     min-height: 100vh;
-    padding-bottom: 100px;
+}
+
+section {
+    position: absolute;
+    top: -90px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
 }
 
 .card {
@@ -319,5 +330,33 @@ font-size: 25px;
 
     100% {
         transform: translateX(0px);
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        top: -90px;
+        transform: scale(0.9, 0.9);
+    }
+}
+
+@media (max-width: 550px) {
+    section {
+        top: -120px;
+        transform: scale(0.8, 0.8);
+    }
+}
+
+@media (max-width: 450px) {
+    section {
+        top: -170px;
+        transform: scale(0.6, 0.6);
+    }
+}
+
+@media (max-width: 300px) {
+    section {
+        top: -190px;
+        transform: scale(0.5, 0.5);
     }
 }

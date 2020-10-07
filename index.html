@@ -7,87 +7,89 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="outer">
-        <div class="card">
-            <div class="front">
-                <img id="chip" src="chip.png" alt="chip">
-                <div id="brands">
-                    <img style="height: 40px; width: auto;" src="logos/amex.png">
-                    <img style="height: 27px; width: auto; top: 10px;" src="logos/discover.png">
-                    <img style="height: 65px; width: auto;" src="logos/mastercard.png">
-                    <img src="logos/troy.png">
-                    <img src="logos/visa.png">
-                </div>
-                <div id="code"></div>
+    <section>
+        <div class="outer">
+            <div class="card">
+                <div class="front">
+                    <img id="chip" src="chip.png" alt="chip">
+                    <div id="brands">
+                        <img style="height: 40px; width: auto;" src="logos/amex.png">
+                        <img style="height: 27px; width: auto; top: 10px;" src="logos/discover.png">
+                        <img style="height: 65px; width: auto;" src="logos/mastercard.png">
+                        <img src="logos/troy.png">
+                        <img src="logos/visa.png">
+                    </div>
+                    <div id="code"></div>
         
-                <div id="holder">
-                    <div class="pos">Card Holder</div>
-                    <div class="pos-name" id="holderval"></div>
-                </div>
-    
-                <div id="expiry">
-                    <div class="pos">Expires</div>
-                    <div class="pos-name" id="dateval"></div>
-                </div>
-            </div>
+                    <div id="holder">
+                        <div class="pos">Card Holder</div>
+                        <div class="pos-name" id="holderval"></div>
+                    </div>
         
-            <div class="back">
-                <div id="white-strip"></div>
-
-                <div id="cwback">
-                    <div class="pos" style="position: absolute; right: 3px; bottom: 25px; font-size: 20px;">CVV</div>
-                    <div class="pos-name" id="cwval"></div>
+                    <div id="expiry">
+                        <div class="pos">Expires</div>
+                        <div class="pos-name" id="dateval"></div>
+                    </div>
+                </div>
+        
+                <div class="back">
+                    <div id="white-strip"></div>
+        
+                    <div id="cwback">
+                        <div class="pos" style="position: absolute; right: 3px; bottom: 25px; font-size: 20px;">CVV</div>
+                        <div class="pos-name" id="cwval"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="info">
-        <form>
-            <label for="cardnum">Card Number</label><br>
-            <input type="text" id="cardnum" name="cardnum" value="" autocomplete="off"><br><br>
-
-            <label for="cardname">Card Holder</label><br>
-            <input type="text" id="cardname" name="cardname" value="" autocomplete="off"><br><br>
-            
-            <div class="horiz">
-                <div d="exp-block">
-                    <label for="month">Expiration Date</label><br>
-                    <select id="month" name="month">
-                        <option value="m">Month</option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    
-                    <select id="year" name="year">
-                        <option value="y">Year</option>
-                        <option value="21">2021</option>
-                        <option value="22">2022</option>
-                        <option value="23">2023</option>
-                        <option value="24">2024</option>
-                        <option value="25">2025</option>
-                    </select>
+        
+        <div class="info">
+            <form>
+                <label for="cardnum">Card Number</label><br>
+                <input type="text" id="cardnum" name="cardnum" value="" autocomplete="off"><br><br>
+        
+                <label for="cardname">Card Holder</label><br>
+                <input type="text" id="cardname" name="cardname" value="" autocomplete="off"><br><br>
+        
+                <div class="horiz">
+                    <div d="exp-block">
+                        <label for="month">Expiration Date</label><br>
+                        <select id="month" name="month">
+                            <option value="m">Month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+        
+                        <select id="year" name="year">
+                            <option value="y">Year</option>
+                            <option value="21">2021</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                        </select>
+                    </div>
+        
+                    <div id="cw-block">
+                        <label for="cw">CVV</label><br>
+                        <input type="text" id="cw" name="cw" value="" autocomplete="off"><br>
+                    </div>
                 </div>
-                
-                <div id="cw-block">
-                    <label for="cw">CVV</label><br>
-                    <input type="text" id="cw" name="cw" value="" autocomplete="off"><br>
-                </div>
-            </div>
-            
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
