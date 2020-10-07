@@ -17,7 +17,7 @@ body {
     position: relative;
     width: 400px;
     height: 250px;
-    background: url(back2.jpg);
+    background: url(backgrounds/back2.jpg);
     color: white;
     border-radius: 20px;
     top: 100px;
